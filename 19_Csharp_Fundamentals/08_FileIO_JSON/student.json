@@ -1,0 +1,7 @@
+{
+  "Name": "John",
+  "Age": 30,
+  "Email": "john@example.com",
+  "IsEnrolled": true,
+  "Courses": ["C# Fundamentals", "File I/O", "LINQ"]
+}

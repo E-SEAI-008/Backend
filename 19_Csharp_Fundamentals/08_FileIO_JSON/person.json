@@ -1,0 +1,7 @@
+{
+  "Name": "John",
+  "Age": 30,
+  "Email": "john@example.com",
+  "IsStudent": true,
+  "Skills": ["C#", "JavaScript", "Python"]
+}
