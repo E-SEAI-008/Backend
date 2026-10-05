@@ -1,0 +1,17 @@
+[
+  {
+    "Title": "something",
+    "Author": "someone",
+    "Status": "Finished"
+  },
+  {
+    "Title": "new",
+    "Author": "newauthor",
+    "Status": "ToRead"
+  },
+  {
+    "Title": "laissa",
+    "Author": "laissaAuthor",
+    "Status": "ToRead"
+  }
+]
