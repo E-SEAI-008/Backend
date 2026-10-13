@@ -1,0 +1,1 @@
+record PostRequestDto(string Title);
