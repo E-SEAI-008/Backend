@@ -1,0 +1,20 @@
+# Build output
+bin/
+obj/
+
+# IDE
+.vs/
+.vscode/
+
+# Logs
+*.log
+
+# environment and secrets
+.env
+.env.*
+!.env.example
+appsettings.*.local.json
+
+# OS files
+.DS_Store
+Thumbs.db

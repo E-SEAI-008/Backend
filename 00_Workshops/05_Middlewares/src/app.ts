@@ -12,9 +12,8 @@ import {
 const app = express();
 const port = 3000;
 
-// makes req.body readable => without this, req.body is undefined on POST/PUT
-app.use(express.json());
 app.use(cors());
+
 // app.use(timeLogger);
 // app.use(methodLogger);
 
