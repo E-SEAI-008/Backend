@@ -1,0 +1,25 @@
+# Build outputs
+[Bb]in/
+[Oo]bj/
+
+# IDE settings
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.sln.docstates
+
+# Logs and test results
+*.log
+TestResults/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+appsettings.Local.json
+
+# OS files
+.DS_Store
+Thumbs.db
