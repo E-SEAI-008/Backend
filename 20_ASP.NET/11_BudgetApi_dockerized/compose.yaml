@@ -1,0 +1,34 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: dockerfile
+    image: budgetapi:docker101
+    ports:
+      - '8080:8080'
+    env_file:
+      - docker.env
+    environment:
+      ConnectionStrings__DefaultConnection: 'Host=db;Port=5432;Database=budgetdb;Username=postgres;Password=localdev123'
+      ASPNETCORE_ENVIRONMENT: Development
+      ApplyMigrations: 'true'
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: postgres:18
+    environment:
+      POSTGRES_DB: budgetdb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: localdev123
+    volumes:
+      - postgres_data:/var/lib/postgresql
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U postgres -d budgetdb']
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  postgres_data:
